@@ -20,4 +20,7 @@ public class UserBO {
 	public User getLatestUser() {
 		return userMapper.selectLatestUser();
 	}
+	public boolean existNewUserByName(String name) {
+		return userMapper.existNewUserByName(name);
+	}
 }

@@ -37,4 +37,12 @@
 		ORDER BY `id` DESC
 		LIMIT 1
  	</select>
+ 	<select id="existNewUserByName" parameterType="string" resultType="boolean">
+		SELECT
+			COUNT(1)
+		FROM
+			`new_user`
+		WHERE
+			`name` = #{name}
+	</select>
  </mapper>

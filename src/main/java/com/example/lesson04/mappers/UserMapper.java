@@ -14,4 +14,6 @@ public interface UserMapper { // int or void
 			@Param("introduce")String introduce);
 	
 	public User selectLatestUser();
+	
+	public boolean existNewUserByName(@Param("name")String name);
 }
