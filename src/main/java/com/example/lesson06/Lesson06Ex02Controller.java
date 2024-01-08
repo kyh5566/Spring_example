@@ -32,4 +32,4 @@ public class Lesson06Ex02Controller {
 		return result;
 	}
 }
-}
+

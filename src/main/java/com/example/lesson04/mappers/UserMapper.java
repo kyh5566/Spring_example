@@ -1,11 +1,11 @@
 package com.example.lesson04.mappers;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
 import com.example.lesson04.domain.User;
 
-@Repository
+@Mapper
 public interface UserMapper { // int or void
 	public int insertUser(
 			@Param("name") String name,

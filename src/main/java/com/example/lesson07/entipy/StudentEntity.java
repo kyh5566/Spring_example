@@ -19,7 +19,7 @@ import lombok.ToString;
 @ToString // 객체 출력 시 필드값이 그대로 보여진다
 @AllArgsConstructor // 파라미터가 모두 있는 생성자
 @NoArgsConstructor // 파라미터 없는 생성자
-@Builder // setter 대용
+@Builder(toBuilder=true) // setter 대용, toBuilder = 일부값 변경 허용
 @Getter
 @Table(name = "new_student")
 @Entity // 이 객체는 entity. (JPA - DB)
